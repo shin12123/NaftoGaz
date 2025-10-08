@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Центр обслуговування споживачів комунальних послуг у м. Запоріжжя. Авторизований партнер ГК Нафтогаз України. Зручне розташування та безкоштовні послуги.">
+    <meta name="keywords" content="Нафтогаз Запоріжжя, Оплата газу Запоріжжя, Центр обслуговування Нафтогаз, комунальні послуги Запоріжжя, довідка заборгованість газ, особовий рахунок газ">
+    <title>Центр обслуговування споживачів ГК "Нафтогаз України" | Запоріжжя</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <h1>ЦЕНТР ОБСЛУГОВУВАННЯ<br>СПОЖИВАЧІВ КОМУНАЛЬНИХ ПОСЛУГ</h1>
+                <div class="header-subtitle-line">
+                    <span class="header-subtitle">АВТОРИЗОВАНИЙ ПАРТНЕР В М. ЗАПОРІЖЖЯ</span>
+                    <img src="logo/Лого_ГК_Нафтогаз_України.png" alt="Нафтогаз України Логотип" class="header-logo">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Info Section -->
+    <section class="main-info-section">
+        <div class="container">
+            <h2>ПОСЛУГИ</h2>
+            <p class="section-intro">ГК "НАФТОГАЗ УКРАЇНИ"<br>У АВТОРИЗОВАНОГО ПАРТНЕРА В МІСТІ ЗАПОРІЖЖЯ</p>
+            
+            <h3 class="subsection-title">Можна отримати:</h3>
+            <ul class="services-list">
+                <li>довідку про відсутність заборгованості;</li>
+                <li>рахунок на оплату заборгованості за газ;</li>
+                <li>акт звірки розрахунків побутових споживачів;</li>
+                <li>послугу з актуалізації своїх даних;</li>
+                <li>оформити договір на нове приєднання та зміну постачальника газу;</li>
+                <li>оформити зміну власника особового рахунку газопостачання.</li>
+            </ul>
+
+            <!-- Documents Toggle -->
+            <div class="documents-toggle-wrapper">
+                <button class="documents-toggle" onclick="toggleDocuments()">
+                    <span>Необхідний пакет документів</span>
+                    <i class="fas fa-chevron-down toggle-icon"></i>
+                </button>
+                <div class="documents-content" id="documentsContent">
+                    <ul class="documents-list">
+                        <li>Паспорт та ІПН</li>
+                        <li>Особовий рахунок</li>
+                        <li>Телефон для підтвердження внесених змін</li>
+                        <li>Правовстановлювальні документи на будинок, квартиру (витяг про державну реєстрацію права власності БТІ, свідоцтво на право власності, договору купівлі-продажу, найму, довічного управління, міни, на спадщину, судові рішення, оренди тощо)</li>
+                        <li>Email</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Info Cards Section -->
+    <section class="info-cards-section">
+        <div class="container">
+            <div class="info-cards-grid">
+                <!-- Location Card -->
+                <div class="info-card">
+                    <div class="info-card-icon">
+                        <img src="png/location.png" alt="Адреса">
+                    </div>
+                    <div class="info-card-content">
+                        <p class="info-card-address"><strong>вул. ПОКРОВСЬКА, 21</strong></p>
+                        <p class="info-card-details">(2-х поверхова будівля біля Покровського Собору, 1-й поверх), зупинка транспорту "вул. Базарна"</p>
+                    </div>
+                </div>
+
+                <!-- Working Hours Card -->
+                <div class="info-card">
+                    <div class="info-card-icon">
+                        <img src="png/calendar.png" alt="Графік роботи">
+                    </div>
+                    <div class="info-card-content">
+                        <div class="hours-info">
+                            <div class="hours-row">
+                                <span class="day">ПН.-ПТ.:</span>
+                                <span class="time">08.00 - 17.00</span>
+                            </div>
+                            <div class="hours-row">
+                                <span class="day">ПЕРЕРВА:</span>
+                                <span class="time">12.00 - 13.00</span>
+                            </div>
+                            <div class="hours-row">
+                                <span class="day">СБ-НД:</span>
+                                <span class="time">Вихідний</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Phone Contact Card -->
+                <div class="info-card phone-card">
+                    <div class="info-card-icon">
+                        <img src="png/telephone.png" alt="Телефон">
+                    </div>
+                    <div class="info-card-content">
+                        <p class="contact-label">ПОПЕРЕДНІЙ ЗАПИС</p>
+                        <p class="phone-number"><a href="tel:+380993533449">099-353-34-49</a></p>
+                        <a href="tel:+380993533449" class="btn btn-call">
+                            <i class="fas fa-phone"></i> Подзвонити зараз
+                        </a>
+                        <div class="messengers">
+                            <a href="https://t.me/+380993533449" class="messenger-link telegram" target="_blank" title="Telegram">
+                                <i class="fab fa-telegram"></i>
+                            </a>
+                            <a href="viber://chat?number=+380993533449" class="messenger-link viber" title="Viber">
+                                <i class="fab fa-viber"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Online Contact Card -->
+                <div class="info-card online-card">
+                    <div class="info-card-icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <div class="info-card-content">
+                        <p class="contact-label">ЗВ'ЯЖІТЬСЯ З НАМИ ОНЛАЙН</p>
+                        <div class="online-messengers">
+                            <a href="https://t.me/+380993533449" class="messenger-btn telegram-btn" target="_blank">
+                                <i class="fab fa-telegram"></i>
+                                <span>Telegram</span>
+                            </a>
+                            <a href="viber://chat?number=+380993533449" class="messenger-btn viber-btn">
+                                <i class="fab fa-viber"></i>
+                                <span>Viber</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+        <div class="container">
+            <div class="map-container">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2677.789!2d35.1397!3d47.8388!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40dc673b9e2fb6d5%3A0x8c8c5c5c5c5c5c5c!2z0LLRg9C7LiDQn9C-0LrRgNC-0LLRgdGM0LrQsCwgMjEsINCX0LDQv9C-0YDRltC20LbRjywg0JfQsNC_0L7RgNGW0LfRjNC60LAg0L7QsdC70LDRgdGC0YwsIDY5MDYz!5e0!3m2!1suk!2sua!4v1234567890"
+                    width="100%" 
+                    height="350" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Payment Section -->
+    <section class="payment-section">
+        <div class="container">
+            <h2>НАРАХУВАННЯ ТА ОПЛАТА</h2>
+            <div class="payment-grid">
+                <!-- Naftogaz Payment -->
+                <div class="payment-card">
+                    <h3>ГК «Нафтогаз України»</h3>
+                    <div class="qr-code">
+                        <img src="qr/QR Нафтогаз.svg" alt="QR код Нафтогаз">
+                    </div>
+                    <a href="https://ips.ua/s/3M8giPJ" class="btn btn-payment" target="_blank">
+                        Нарахування та оплата
+                    </a>
+                </div>
+
+                <!-- Zaporizhgaz Payment -->
+                <div class="payment-card">
+                    <h3>АТ "ЗАПОРІЖГАЗ"</h3>
+                    <div class="qr-code">
+                        <img src="qr/QR Запоріжгаз.svg" alt="QR код Запоріжгаз">
+                    </div>
+                    <a href="https://ips.ua/s/JaDSGo0" class="btn btn-payment" target="_blank">
+                        Нарахування та оплата
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section">
+        <div class="container">
+            <p class="about-text">Центр обслуговування споживачів комунальних послуг у Запоріжжі — сучасний сервіс для мешканців міста. Зручність, прозорість та швидке вирішення питань — все в одному місці.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p class="footer-title">Центр обслуговування споживачів ГК «Нафтогаз України», м. Запоріжжя</p>
+                <p class="footer-company">ТОВ КПФ «ГЮСС»</p>
+                <p class="footer-contact">
+                    <i class="fas fa-phone"></i> <a href="tel:+380993533449">099-353-34-49</a> | 
+                    <i class="fas fa-map-marker-alt"></i> 69063, м. Запоріжжя, вул. Покровська, 21
+                </p>
+                <p class="footer-copyright">&copy; 2025 Всі права захищені</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
