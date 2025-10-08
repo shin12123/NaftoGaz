@@ -632,7 +632,9 @@ section h2::after {
 /* Location Section */
 .location-section {
     background: var(--white);
+    padding-top: 50px;
     padding-bottom: 40px;
+    margin-top: -70px;
 }
 
 .location-card-wrapper {
@@ -735,6 +737,7 @@ section h2::after {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 40px;
+    margin-top: 25px;
 }
 
 .payment-card {
@@ -860,6 +863,103 @@ section h2::after {
 
 .about-text p:last-child {
     margin-bottom: 0;
+}
+
+/* Feedback Form Section */
+.feedback-section {
+    background: linear-gradient(135deg, var(--white) 0%, var(--bg-light) 100%);
+    padding: 80px 0;
+}
+
+.feedback-subtitle {
+    text-align: center;
+    font-size: 1.1rem;
+    color: var(--text-gray);
+    margin-bottom: 40px;
+    margin-top: 15px;
+}
+
+.feedback-form {
+    max-width: 800px;
+    margin: 0 auto;
+    background: var(--white);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: var(--shadow-lg);
+    border: 1px solid var(--border-gray);
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    margin-bottom: 25px;
+}
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-black);
+    margin-bottom: 10px;
+}
+
+.form-group label i {
+    color: var(--primary-blue);
+    margin-right: 8px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 14px 18px;
+    border: 2px solid var(--border-gray);
+    border-radius: 10px;
+    font-size: 1rem;
+    font-family: inherit;
+    transition: all 0.3s ease;
+    background: var(--white);
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--primary-blue);
+    box-shadow: 0 0 0 4px rgba(0, 115, 186, 0.1);
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 150px;
+}
+
+.btn-submit {
+    width: 100%;
+    padding: 18px 40px;
+    background: linear-gradient(135deg, var(--primary-blue) 0%, var(--dark-blue) 100%);
+    color: var(--white);
+    border: none;
+    border-radius: 12px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: var(--shadow-md);
+}
+
+.btn-submit:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(0, 115, 186, 0.4);
+}
+
+.btn-submit i {
+    margin-right: 10px;
 }
 
 /* Footer */
@@ -1163,5 +1263,18 @@ a:focus-visible, button:focus-visible {
     .about-text {
         font-size: 1rem;
         padding: 20px;
+    }
+
+    .feedback-form {
+        padding: 25px;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+
+    .btn-submit {
+        padding: 16px 30px;
+        font-size: 1rem;
     }
 }

@@ -22,29 +22,40 @@ document.addEventListener('DOMContentLoaded', function() {
             
             const name = document.getElementById('name').value;
             const phone = document.getElementById('phone').value;
+            const email = document.getElementById('email').value || 'Не вказано';
             const message = document.getElementById('message').value;
             
-            // Email configuration - update this email address
-            const recipientEmail = 'info@naftogaz-zp.com.ua'; // Замініть на реальний email
+            // Email configuration - ЗАМІНІТЬ НА ВАШ EMAIL
+            const recipientEmail = 'info@naftogaz-zp.com.ua';
             
             // Create email body
             const emailBody = `
+Нове повідомлення з форми зворотного зв'язку
+
 Ім'я: ${name}
 Телефон: ${phone}
-Повідомлення: ${message}
+Email: ${email}
+
+Повідомлення:
+${message}
+
+---
+Відправлено з сайту Центру обслуговування споживачів ГК "Нафтогаз України"
             `.trim();
             
             // Create mailto link
-            const mailtoLink = `mailto:${recipientEmail}?subject=Запит з сайту Центру обслуговування&body=${encodeURIComponent(emailBody)}`;
+            const mailtoLink = `mailto:${recipientEmail}?subject=Запит з сайту - ${name}&body=${encodeURIComponent(emailBody)}`;
             
             // Open email client
             window.location.href = mailtoLink;
             
             // Show confirmation message
-            alert('Дякуємо за ваше звернення! Відкривається ваш поштовий клієнт для відправки повідомлення.');
+            alert('✅ Дякуємо за ваше звернення!\n\nВідкривається ваш поштовий клієнт для відправки повідомлення.\nМи зв\'яжемося з вами найближчим часом.');
             
-            // Reset form
-            feedbackForm.reset();
+            // Reset form after a short delay
+            setTimeout(() => {
+                feedbackForm.reset();
+            }, 1000);
         });
     }
     
@@ -105,7 +116,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // Add smooth hover effect to buttons
-    const buttons = document.querySelectorAll('.btn-payment, .documents-toggle, .btn-contact, .online-btn');
+    const buttons = document.querySelectorAll('.btn-payment, .documents-toggle, .btn-contact, .online-btn, .btn-submit');
     buttons.forEach(button => {
         button.addEventListener('mouseenter', function(e) {
             const rect = this.getBoundingClientRect();

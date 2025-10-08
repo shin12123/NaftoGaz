@@ -223,6 +223,37 @@
         </div>
     </section>
 
+    <!-- Feedback Form Section -->
+    <section class="feedback-section">
+        <div class="container">
+            <h2>Форма зворотного зв'язку</h2>
+            <p class="feedback-subtitle">Залишіть своє повідомлення, і ми обов'язково з вами зв'яжемося</p>
+            <form class="feedback-form" id="feedbackForm">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name"><i class="fas fa-user"></i> Ім'я *</label>
+                        <input type="text" id="name" name="name" required placeholder="Введіть ваше ім'я">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone"><i class="fas fa-phone"></i> Телефон *</label>
+                        <input type="tel" id="phone" name="phone" required placeholder="+380">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="email"><i class="fas fa-envelope"></i> Email</label>
+                    <input type="email" id="email" name="email" placeholder="your@email.com">
+                </div>
+                <div class="form-group">
+                    <label for="message"><i class="fas fa-comment-dots"></i> Повідомлення *</label>
+                    <textarea id="message" name="message" rows="6" required placeholder="Напишіть ваше повідомлення..."></textarea>
+                </div>
+                <button type="submit" class="btn btn-submit">
+                    <i class="fas fa-paper-plane"></i> Відправити повідомлення
+                </button>
+            </form>
+        </div>
+    </section>
+
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
