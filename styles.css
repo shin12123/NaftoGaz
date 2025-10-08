@@ -38,10 +38,13 @@ body::after {
     position: fixed;
     top: 0;
     bottom: 0;
-    width: 8px;
-    background: linear-gradient(180deg, var(--primary-blue) 0%, var(--accent-blue) 50%, var(--primary-blue) 100%);
+    width: 12px;
+    background: linear-gradient(180deg, #003d66 0%, #005A92 30%, #0073BA 50%, #005A92 70%, #003d66 100%);
     z-index: 9999;
-    box-shadow: 0 0 20px rgba(0, 115, 186, 0.3);
+    box-shadow: 
+        0 0 30px rgba(0, 61, 102, 0.6),
+        inset 0 0 10px rgba(0, 115, 186, 0.3);
+    filter: blur(1px);
 }
 
 body::before {
@@ -50,6 +53,14 @@ body::before {
 
 body::after {
     right: 0;
+}
+
+/* Hide borders on mobile */
+@media (max-width: 768px) {
+    body::before,
+    body::after {
+        display: none;
+    }
 }
 
 .container {
