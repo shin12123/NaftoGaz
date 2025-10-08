@@ -128,6 +128,7 @@ section h2::after {
 /* Main Info Section */
 .main-info-section {
     background: var(--white);
+    padding-top: -10px;
 }
 
 .section-intro {
@@ -138,6 +139,62 @@ section h2::after {
     margin-top: 30px;
     line-height: 1.8;
     font-weight: 500;
+}
+
+/* Advantages Banner */
+.advantages-banner {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin: 40px 0 50px 0;
+}
+
+.advantage-item {
+    background: linear-gradient(135deg, var(--primary-blue) 0%, var(--dark-blue) 100%);
+    color: var(--white);
+    padding: 35px;
+    border-radius: 16px;
+    text-align: center;
+    box-shadow: var(--shadow-lg);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+}
+
+.advantage-item::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    right: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
+    pointer-events: none;
+}
+
+.advantage-item:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 12px 32px rgba(0, 115, 186, 0.3);
+}
+
+.advantage-item i {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: var(--white);
+}
+
+.advantage-item h3 {
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.advantage-item p {
+    font-size: 1.05rem;
+    opacity: 0.95;
+    line-height: 1.6;
 }
 
 .subsection-title {
@@ -392,7 +449,7 @@ section h2::after {
 
 /* Phone Card */
 .phone-card {
-    background: linear-gradient(135deg, var(--primary-blue) 0%, var(--dark-blue) 100%);
+    background: linear-gradient(135deg, #005A92 0%, #003d66 100%);
     color: var(--white);
     position: relative;
     overflow: hidden;
@@ -512,7 +569,7 @@ section h2::after {
 
 /* Online Contact Card */
 .online-card {
-    background: linear-gradient(135deg, #00A3E0 0%, #0073BA 100%);
+    background: linear-gradient(135deg, #005A92 0%, #003d66 100%);
     color: var(--white);
     position: relative;
     overflow: hidden;
@@ -731,22 +788,32 @@ section h2::after {
 
 /* About Section */
 .about-section {
-    background: var(--white);
-    padding: 60px 0;
+    background: linear-gradient(135deg, var(--bg-light) 0%, var(--white) 100%);
+    padding: 80px 0;
+}
+
+.about-content {
+    max-width: 900px;
+    margin: 0 auto;
 }
 
 .about-text {
-    text-align: center;
-    font-size: 1.15rem;
-    color: var(--text-gray);
-    max-width: 800px;
-    margin: 0 auto;
-    line-height: 1.9;
-    font-style: italic;
-    padding: 30px;
-    background: var(--bg-light);
+    padding: 35px;
+    background: var(--white);
     border-radius: 12px;
+    box-shadow: var(--shadow-md);
     border-left: 5px solid var(--primary-blue);
+}
+
+.about-text p {
+    font-size: 1.1rem;
+    color: var(--text-black);
+    line-height: 1.9;
+    margin-bottom: 20px;
+}
+
+.about-text p:last-child {
+    margin-bottom: 0;
 }
 
 /* Footer */
@@ -918,6 +985,10 @@ a:focus-visible, button:focus-visible {
         padding: 15px 15px 15px 45px;
     }
 
+    .advantages-banner {
+        grid-template-columns: 1fr;
+    }
+
     .info-cards-grid {
         grid-template-columns: 1fr;
     }
@@ -967,6 +1038,23 @@ a:focus-visible, button:focus-visible {
     .services-list li {
         font-size: 0.95rem;
         padding: 14px 14px 14px 40px;
+    }
+
+    .advantages-banner {
+        gap: 20px;
+        margin: 30px 0 40px 0;
+    }
+
+    .advantage-item {
+        padding: 25px;
+    }
+
+    .advantage-item i {
+        font-size: 2.5rem;
+    }
+
+    .advantage-item h3 {
+        font-size: 1.3rem;
     }
 
     .info-card {

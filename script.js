@@ -92,7 +92,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // Animate cards with stagger effect
-    const cards = document.querySelectorAll('.info-card, .payment-card, .services-list li');
+    const cards = document.querySelectorAll('.info-card, .payment-card, .services-list li, .advantage-item');
     cards.forEach((card, index) => {
         card.style.opacity = '0';
         card.style.transform = 'translateY(30px)';
