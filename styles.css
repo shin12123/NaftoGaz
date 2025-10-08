@@ -1075,15 +1075,12 @@ section h2::after {
 }
 
 .footer-bottom {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     padding: 25px 0;
     text-align: center;
 }
 
 .footer-copyright {
-    font-size: 0.85rem;
+    font-size: 0.9rem;
     color: #999;
 }
 
