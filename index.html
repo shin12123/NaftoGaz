@@ -88,80 +88,88 @@
     <!-- Info Cards Section -->
     <section class="info-cards-section">
         <div class="container">
-            <div class="info-cards-grid">
-                <!-- Location Card -->
-                <div class="info-card">
+            <h2>Контактна інформація</h2>
+            
+            <!-- Working Hours -->
+            <div class="working-hours-block">
+                <div class="hours-header">
+                    <div class="hours-icon">
+                        <img src="png/calendar.png" alt="Графік роботи">
+                    </div>
+                    <h3>Графік роботи</h3>
+                </div>
+                <div class="hours-table">
+                    <div class="hours-row">
+                        <span class="day">Понеділок - П'ятниця:</span>
+                        <span class="time">08:00 - 17:00</span>
+                    </div>
+                    <div class="hours-row">
+                        <span class="day">Обідня перерва:</span>
+                        <span class="time">12:00 - 13:00</span>
+                    </div>
+                    <div class="hours-row weekend">
+                        <span class="day">Субота - Неділя:</span>
+                        <span class="time">Вихідний</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Cards Grid -->
+            <div class="contact-cards-grid">
+                <!-- Phone Contact Card -->
+                <div class="contact-card phone-contact-card">
+                    <div class="contact-card-icon">
+                        <img src="png/telephone.png" alt="Телефон">
+                    </div>
+                    <h3 class="contact-card-title">ПОПЕРЕДНІЙ ЗАПИС</h3>
+                    <p class="contact-phone"><a href="tel:+380993533449">099-353-34-49</a></p>
+                    <a href="tel:+380993533449" class="btn btn-contact">
+                        <i class="fas fa-phone"></i> Подзвонити зараз
+                    </a>
+                    <div class="contact-messengers">
+                        <a href="https://t.me/+380993533449" class="messenger-icon telegram" target="_blank" title="Telegram">
+                            <i class="fab fa-telegram"></i>
+                        </a>
+                        <a href="viber://chat?number=+380993533449" class="messenger-icon viber" title="Viber">
+                            <i class="fab fa-viber"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Online Contact Card -->
+                <div class="contact-card online-contact-card">
+                    <div class="contact-card-icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <h3 class="contact-card-title">ЗВ'ЯЖІТЬСЯ ОНЛАЙН</h3>
+                    <p class="online-subtitle">Напишіть нам у месенджері</p>
+                    <div class="online-buttons">
+                        <a href="https://t.me/+380993533449" class="online-btn telegram-btn" target="_blank">
+                            <i class="fab fa-telegram"></i>
+                            <span>Telegram</span>
+                        </a>
+                        <a href="viber://chat?number=+380993533449" class="online-btn viber-btn">
+                            <i class="fab fa-viber"></i>
+                            <span>Viber</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location Section -->
+    <section class="location-section">
+        <div class="container">
+            <h2>Наша адреса</h2>
+            <div class="location-card-wrapper">
+                <div class="info-card location-card">
                     <div class="info-card-icon">
                         <img src="png/location.png" alt="Адреса">
                     </div>
                     <div class="info-card-content">
                         <p class="info-card-address"><strong>вул. ПОКРОВСЬКА, 21</strong></p>
                         <p class="info-card-details">(2-х поверхова будівля біля Покровського Собору, 1-й поверх), зупинка транспорту "вул. Базарна"</p>
-                    </div>
-                </div>
-
-                <!-- Working Hours Card -->
-                <div class="info-card">
-                    <div class="info-card-icon">
-                        <img src="png/calendar.png" alt="Графік роботи">
-                    </div>
-                    <div class="info-card-content">
-                        <div class="hours-info">
-                            <div class="hours-row">
-                                <span class="day">ПН.-ПТ.:</span>
-                                <span class="time">08.00 - 17.00</span>
-                            </div>
-                            <div class="hours-row">
-                                <span class="day">ПЕРЕРВА:</span>
-                                <span class="time">12.00 - 13.00</span>
-                            </div>
-                            <div class="hours-row">
-                                <span class="day">СБ-НД:</span>
-                                <span class="time">Вихідний</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Phone Contact Card -->
-                <div class="info-card phone-card">
-                    <div class="info-card-icon">
-                        <img src="png/telephone.png" alt="Телефон">
-                    </div>
-                    <div class="info-card-content">
-                        <p class="contact-label">ПОПЕРЕДНІЙ ЗАПИС</p>
-                        <p class="phone-number"><a href="tel:+380993533449">099-353-34-49</a></p>
-                        <a href="tel:+380993533449" class="btn btn-call">
-                            <i class="fas fa-phone"></i> Подзвонити зараз
-                        </a>
-                        <div class="messengers">
-                            <a href="https://t.me/+380993533449" class="messenger-link telegram" target="_blank" title="Telegram">
-                                <i class="fab fa-telegram"></i>
-                            </a>
-                            <a href="viber://chat?number=+380993533449" class="messenger-link viber" title="Viber">
-                                <i class="fab fa-viber"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Online Contact Card -->
-                <div class="info-card online-card">
-                    <div class="info-card-icon">
-                        <i class="fas fa-comments"></i>
-                    </div>
-                    <div class="info-card-content">
-                        <p class="contact-label">ЗВ'ЯЖІТЬСЯ З НАМИ ОНЛАЙН</p>
-                        <div class="online-messengers">
-                            <a href="https://t.me/+380993533449" class="messenger-btn telegram-btn" target="_blank">
-                                <i class="fab fa-telegram"></i>
-                                <span>Telegram</span>
-                            </a>
-                            <a href="viber://chat?number=+380993533449" class="messenger-btn viber-btn">
-                                <i class="fab fa-viber"></i>
-                                <span>Viber</span>
-                            </a>
-                        </div>
                     </div>
                 </div>
             </div>

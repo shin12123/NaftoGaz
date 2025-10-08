@@ -92,7 +92,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // Animate cards with stagger effect
-    const cards = document.querySelectorAll('.info-card, .payment-card, .services-list li, .advantage-item');
+    const cards = document.querySelectorAll('.contact-card, .location-card, .payment-card, .services-list li, .advantage-item, .working-hours-block');
     cards.forEach((card, index) => {
         card.style.opacity = '0';
         card.style.transform = 'translateY(30px)';
@@ -105,7 +105,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // Add smooth hover effect to buttons
-    const buttons = document.querySelectorAll('.btn-payment, .documents-toggle, .btn-call, .messenger-btn');
+    const buttons = document.querySelectorAll('.btn-payment, .documents-toggle, .btn-contact, .online-btn');
     buttons.forEach(button => {
         button.addEventListener('mouseenter', function(e) {
             const rect = this.getBoundingClientRect();
